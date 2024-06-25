@@ -1,6 +1,6 @@
 import axios from 'axios';
 
-const API_BASE_URL = 'http://localhost:3000/wallet'; // Замените на ваш базовый URL, если он отличается
+const API_BASE_URL = import.meta.env.VITE_BACK_END
 
 // Функция для получения всех кошельков
 export async function getAllWallets() {

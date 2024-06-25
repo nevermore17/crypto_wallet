@@ -13,7 +13,7 @@ const app = new Koa();
 app.use(bodyParser())
 app.use(cors());
 
-mongoose.connect('mongodb://localhost/my_db');
+mongoose.connect(process.env.MONGO_URI);
 
 app.use(wallet.routes());
 
